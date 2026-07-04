@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "test": "tests"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   },
   "scripts": {
     "dev": "tsx watch src/server.ts",
