@@ -1,8 +1,8 @@
 import { Response, NextFunction } from 'express';
-import { AuthRequest } from '../types';
-import { verifyToken } from '../utils/jwt';
-import ApiError from '../utils/ApiError';
-import { HTTP_STATUS } from '../constants';
+import { AuthRequest } from '../types/index.js';
+import { verifyToken } from '../utils/jwt.js';
+import ApiError from '../utils/ApiError.js';
+import { HTTP_STATUS } from '../constants/index.js';
 
 const authMiddleware = (req: AuthRequest, res: Response, next: NextFunction) => {
   try {
